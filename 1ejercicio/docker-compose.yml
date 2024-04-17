@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  python-env:
+    image: python:3.8-slim
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: /bin/bash
+    stdin_open: true
+    tty: true

@@ -1,0 +1,11 @@
+jupyter-notebook:
+  container_name: jupyter_n
+  build:
+    context: .
+    dockerfile: Dockerfile
+  volumes:
+    - ./notebooks:/home/vmendez/work
+  ports:
+    - "8888:8888"
+    stdin_open: true
+  tty: true
